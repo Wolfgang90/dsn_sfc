@@ -11,7 +11,7 @@ def run_kafka_server():
     # TODO fill in blanks
     producer = producer_server.ProducerServer(
         input_file=input_file,
-        topic="dsn.sfc.policedepartmentcalls",
+        topic="dsn.sfc.policecalls",
         bootstrap_servers="localhost:9092",
         client_id="dsn.sfc.broker",
         #value_serializer=value_serializer

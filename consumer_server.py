@@ -28,7 +28,8 @@ class ConsumerServer(KafkaConsumer):
             print("Error: Consumer is closed")
             self.consumer.close()       
         
-def consume_kafka_data(topic="dsn.sfc.policedepartmentcalls"):
+def consume_kafka_data(topic="dsn.sfc.policecalls"):
+    #topic = "test.topic"
     consumer = ConsumerServer(topic=topic)
     consumer.consume_data()
 
