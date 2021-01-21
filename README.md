@@ -46,3 +46,10 @@ to customize and start a spark streaming session.
 ### progress reporter
 ![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/micro_batch_screenshot1.PNG "progress reporter")
 ![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/micro_batch_screenshot2.PNG "progress reporter")
+
+## Project questions
+1) How did changing values on the SparkSession property parameters affect the throughput and latency of the data?
+*`maxOffsetsPerTrigger` limits the offsets processed per trigger interval to a maximum number (initially unlimited). One can see the effect of amending `maxOffsetsPerTrigger` in `processedRowsPerSecond`.* 
+
+2) What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
+*Setting the `maxOffsetsPerTrigger` can improve efficiencies. I received good results with `maxOffsetsPerTrigger`=10. However, with more resources available this number could be increased to achieve better results.*
