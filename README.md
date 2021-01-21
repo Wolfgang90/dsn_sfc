@@ -36,3 +36,13 @@ to customize and start a spark streaming session.
 
 ## Output screenshots
 (as requested by Udacity in project requirements)
+
+### kafka-consumer-console output
+![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/cli_consumer_screenshot.PNG "kafka-consumer-console output")
+
+### spark UI
+![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/spark_ui.PNG "spark UI")
+
+### progress reporter
+![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/micro_batch_screenshot1.PNG "progress reporter")
+![alt text](https://github.com/Wolfgang90/dsn_sfc/blob/main/images/micro_batch_screenshot2.PNG "progress reporter")
